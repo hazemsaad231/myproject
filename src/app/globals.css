@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+
+/* متغيرات (اختياري) */
+:root {
+  --swiper-navigation-color: #028E81;  /* لون السهم */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family:  tajawal, Helvetica, sans-serif;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.title{
+  font-size:xx-large;
+  font-weight: bold;
+  color: #0c7f73;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
