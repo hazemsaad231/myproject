@@ -77,7 +77,7 @@ const SwiperComponent = () => {
 {/* الزرار اللي انت جايبه */}
       <button
         aria-label="Previous"
-        className="mt-4 custom-prev absolute left-6 top-1/2 -translate-y-1/2 z-50 w-12 h-12 rounded-full border-2 border-white bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition"
+        className="mt-4 custom-prev absolute left-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full border-2 border-white bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition"
       >
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="15 18 9 12 15 6"></polyline>
@@ -86,7 +86,7 @@ const SwiperComponent = () => {
 
       <button
         aria-label="Next"
-        className="mt-4 custom-next absolute right-6 top-1/2 -translate-y-1/2 z-50 w-12 h-12 rounded-full border-2 border-white bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition"
+        className="mt-4 custom-next absolute right-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full border-2 border-white bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="9 18 15 12 9 6"></polyline>
