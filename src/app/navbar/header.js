@@ -8,6 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { useContext } from "react";
 import { Context } from "../../Context/context";
 import Logo from "./logo";
+import { HiViewList } from "react-icons/hi";
 
 
 export default function Header() {
@@ -21,13 +22,34 @@ export default function Header() {
     };
 
   return (
-    <header className="hidden md:block">
-      <div className="h-12 bg-white flex justify-end items-center pl-20">
-        <FaFacebook className="inline m-2 text-xl text-[#028E81]"/>
+    <header>
+      <div className="h-24 md:h-14 w-full bg-white flex justify-end items-center">
+        <div className="hidden md:block pl-20">
+<FaFacebook className="inline m-2 text-xl text-[#028E81]"/>
         <FaXTwitter className="inline m-2 text-xl text-[#028E81]"/>
+        </div>
+        <div className="md:hidden ">
+
+          <div className="w-[100vw] flex justify-between items-center p-4">
+
+                       <HiViewList className="text-3xl text-[#028E81]"/>
+
+          <Image
+              src="/logo.webp"
+              alt="logo"
+              width={120}
+              height={120}
+              className="
+                w-[60px] h-[60px] "
+            />
+
+</div>
+
+        </div>
       </div>
 
-      <nav className="relative h-16 bg-[#028E81] text-white flex gap-20 justify-center items-center ">
+<div className="hidden md:block">
+      <nav className="relative h-16 bg-[#028E81] text-white flex md:gap-8 lg:gap-10 xl:gap-16 justify-center items-center p-4 ">
         <div>
           <Logo/>
         </div>
@@ -62,6 +84,7 @@ export default function Header() {
           <li onClick={() => handleBg('contact')}><Link href="/contact" className={`hover:text-amber-400 ${active === 'contact' && 'text-amber-500'}`}> تواصل معنا </Link></li>
         </ul>
       </nav>
+      </div>
     </header>
   )
 }

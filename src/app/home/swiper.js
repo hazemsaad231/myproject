@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import Data from "../../data/data";
-// import Gsap from "../components/gsap";
 
 
 const SwiperComponent = () => {
@@ -14,28 +13,30 @@ const SwiperComponent = () => {
 
 
 
-  return <div>
+  return <div className="relative">
 
  <Swiper
         slidesPerView={1}
+          navigation={{
+          prevEl: ".custom-prev",
+          nextEl: ".custom-next",
+        }}
         loop={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
-        navigation
-        modules={[Navigation, Autoplay]}
+        modules={[Autoplay, Navigation]}
         className="mySwiper"
       >
         {Data.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="relative w-full h-[80vh] overflow-hidden">
+            <div className="relative w-full h-[60vh] sm:h-[60vh] md:h-[80vh] lg:h-[80vh] overflow-hidden">
               <img
                 src={item.image}
                 alt={item.title}
                 className="slide-img w-full h-full"
               />
-              {/* <Gsap src={item.image} slices={1}/> */}
 
               <div className=" absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black/30">
                 <p
@@ -46,12 +47,12 @@ const SwiperComponent = () => {
     sm:w-[full]
     md:w-[400px]
     lg:w-[600px]
-    xl:w-[900px] h-[85px]
+    xl:w-[900px]
     min-w-0 min-h-0
     max-w-none max-h-none
     text-center
     font-bold
-    text-4xl
+    text-xl sm:text-xl md:text-3xl lg:text-4xl
     tracking-[0px]
     opacity-100
     
@@ -72,6 +73,26 @@ const SwiperComponent = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+{/* الزرار اللي انت جايبه */}
+      <button
+        aria-label="Previous"
+        className="mt-4 custom-prev absolute left-6 top-1/2 -translate-y-1/2 z-50 w-12 h-12 rounded-full border-2 border-white bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <button
+        aria-label="Next"
+        className="mt-4 custom-next absolute right-6 top-1/2 -translate-y-1/2 z-50 w-12 h-12 rounded-full border-2 border-white bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
 
       
 
