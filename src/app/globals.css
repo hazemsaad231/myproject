@@ -39,6 +39,10 @@ body {
   color: #0c7f73;
 }
 
+  .logo{
+box-shadow: 0px 0px 10px 6px rgba(255, 255, 255, 0.45);
+  }  
+
 
 
 html {

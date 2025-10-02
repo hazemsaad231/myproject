@@ -1,3 +1,4 @@
+import AOSInit from "../components/aos";
 import AboutPage from "./aboute";
 import Add from "./add";
 import Maps from "./maps";
@@ -5,8 +6,12 @@ import News from "./news";
 import SwiperComponent from "./swiper";
 
 const Homepage = () => {
+
+
+
   return (
     <div>
+      <AOSInit/>
     <SwiperComponent/>
     <AboutPage/>
     <Maps/>

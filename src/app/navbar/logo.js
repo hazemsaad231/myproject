@@ -1,7 +1,7 @@
 import Image from "next/image"
 const Logo = () => {
     return (
-       <div className="relative z-20 rounded-2xl bg-white p-2 shadow-2xl flex items-center justify-center">
+       <div className="logo relative z-20 rounded-2xl bg-white p-2 shadow-2xl flex items-center justify-center">
   <Image
     src="/logo.webp"
     alt="logo"
@@ -12,9 +12,10 @@ const Logo = () => {
       sm:w-[60px] sm:h-[60px]  /* شاشات صغيرة */
       md:w-[80px] md:h-[80px]  /* تابلت */
       lg:w-[120px] lg:h-[120px]  /* لابتوب */
-      xl:w-[140px] xl:h-[140px]  /* شاشات كبيرة */
+      xl:w-[160px] xl:h-[160px]  /* شاشات كبيرة */
       object-contain
     "
+    priority
   />
 </div>
 

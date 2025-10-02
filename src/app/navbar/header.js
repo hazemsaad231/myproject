@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <header className="relative z-50">
       <div className="h-24 md:h-14 w-full bg-white flex justify-end items-center">
-        <div className="hidden md:flex items-center gap-2 pr-8">
+        <div className="hidden md:flex items-center gap-2 p-8">
           <FaFacebook className="text-xl text-[#028E81]" />
           <FaXTwitter className="text-xl text-[#028E81]" />
         </div>
