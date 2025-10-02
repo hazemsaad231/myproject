@@ -34,11 +34,20 @@ body {
   overflow-x: hidden;
 }
 
-.title{
+/* .title{
   font-size:xx-large;
   font-weight: bold;
   color: #0c7f73;
+} */
+
+.title {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #0c7f73;
+  animation: zoomIn 0.8s ease forwards;
 }
+
+
 
 html {
   scroll-behavior: smooth;

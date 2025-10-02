@@ -7,6 +7,7 @@ import { FaFacebook , FaArrowDown } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { useContext } from "react";
 import { Context } from "../../Context/context";
+import Logo from "./logo";
 
 
 export default function Header() {
@@ -27,8 +28,8 @@ export default function Header() {
       </div>
 
       <nav className="relative h-16 bg-[#028E81] text-white flex gap-20 justify-center items-center ">
-        <div className="relative z-20 rounded-2xl bg-white p-2 mt-6 shadow-2xl" >
-          <Image src="/logo.webp" alt="logo" width={150} height={150} />
+        <div>
+          <Logo/>
         </div>
 
         <ul className="flex gap-8 text-lg font-semibold">
