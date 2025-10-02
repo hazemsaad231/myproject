@@ -1,17 +1,19 @@
-"use client";
+
+'use client';
 
 import Image from "next/image";
 import Link from "next/link"
 import { FaFacebook , FaArrowDown } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { useState } from "react";
+import { useContext } from "react";
+import { Context } from "../../Context/context";
 
 
 export default function Header() {
 
 
-    const [active, setActive] = useState(null);
-  
+  const {active, setActive} = useContext(Context);
+
     const handleBg = (l) => {
       setActive(l);
         

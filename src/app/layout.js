@@ -1,13 +1,13 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "./pages/navbar/header";
+import Header from "./navbar/header";
 import { Cairo, Amiri, Tajawal } from "next/font/google";
 import { ContextProvider } from "@/Context/context";
 import "./globals.css"; // لو عندك
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Footer from "./pages/footer/page";
+import Footer from "./footer/page";
 
 
 

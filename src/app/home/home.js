@@ -2,12 +2,12 @@ import AboutPage from "./aboute";
 import Add from "./add";
 import Maps from "./maps";
 import News from "./news";
-import Slider from "./slider";
+import SwiperComponent from "./swiper";
 
 const Homepage = () => {
   return (
     <div>
-    <Slider/>
+    <SwiperComponent/>
     <AboutPage/>
     <Maps/>
     <Add/>

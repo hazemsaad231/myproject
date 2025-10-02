@@ -1,13 +1,19 @@
-'use client';
+'use client'
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import Data from "../../data/data";
+// import Gsap from "../components/gsap";
 
 
 const SwiperComponent = () => {
+
+
+
+
   return <div>
 
  <Swiper
@@ -29,8 +35,9 @@ const SwiperComponent = () => {
                 alt={item.title}
                 className="slide-img w-full h-full"
               />
+              {/* <Gsap src={item.image} slices={1}/> */}
 
-              <div className=" absolute inset-0 flex flex-col gap-6 items-center justify-center">
+              <div className=" absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black/30">
                 <p
   className="
     relative z-10
@@ -65,6 +72,8 @@ const SwiperComponent = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      
 
   </div>;
 }

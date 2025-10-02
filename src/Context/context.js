@@ -2,18 +2,19 @@
 
 
 import { createContext } from 'react'
+import { useState } from 'react';
 
 
 export const Context = createContext(null);
 
 export const ContextProvider = (props) => {
 
- 
+     const [active, setActive] = useState(null);
 
 
     return(
         <>
-        <Context.Provider value={{}}>{props.children}</Context.Provider>
+        <Context.Provider value={{active, setActive}}>{props.children}</Context.Provider>
         </>
     )
 }
