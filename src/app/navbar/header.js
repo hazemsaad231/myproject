@@ -36,12 +36,12 @@ export default function Header() {
             <div>
               {isNavbarVisible ? (
                 <MdOutlineCancelPresentation
-                  className="text-2xl mt-1 cursor-pointer"
+                  className="text-2xl mt-1 cursor-pointer text-[#028E81]"
                   onClick={toggleNavbar}
                 />
               ) : (
                 <HiViewList
-                  className="text-2xl mt-1 cursor-pointer"
+                  className="text-2xl mt-1 cursor-pointer text-[#028E81]"
                   onClick={toggleNavbar}
                 />
               )}
