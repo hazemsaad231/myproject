@@ -14,7 +14,7 @@ const response = await fetch("https://jsonplaceholder.typicode.com/posts");
         <div>
            <div className="flex justify-center items-center gap-12">
   <hr className="w-20 sm:w-28 md:w-60 lg:w-96 h-2 bg-[#0c7f73] border-0 rounded" />
-  <h1 className="title text-xl md:text-3xl lg:text-4xl" data-aos = "zoom-in">اخر الاخبار</h1>
+  <h1 className="title text-xl md:text-3xl lg:text-4xl">اخر الاخبار</h1>
   <hr className="w-20 sm:w-28 md:w-60 lg:w-96 h-1 bg-[#0c7f73] border-0 rounded" />
 </div>
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-[90%] sm:w-[90%] md:w-[80%] lg:w-[80%] xl:w-[70%] py-12 m-auto ">
