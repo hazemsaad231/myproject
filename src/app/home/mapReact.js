@@ -1,3 +1,4 @@
+
 'use client';
 import { useEffect, useRef, useState } from 'react';
 
@@ -214,57 +215,57 @@ export default function YemenMap({ idToName = {} }) {
   </path>
  </g>
  <g id="points">
-  <circle class="12.45131744383969|42.45095608773067" cx="90.9" cy="512" id="0">
+  <circle className="12.45131744383969|42.45095608773067" cx="90.9" cy="512" id="0">
   </circle>
-  <circle class="15.208657414386428|48.81266337282344" cx="545.5" cy="309.1" id="1">
+  <circle className="15.208657414386428|48.81266337282344" cx="545.5" cy="309.1" id="1">
   </circle>
-  <circle class="18.655332377569852|53.90202920089766" cx="909.1" cy="51.6" id="2">
+  <circle className="18.655332377569852|53.90202920089766" cx="909.1" cy="51.6" id="2">
   </circle>
  </g>
  <g id="label_points">
-  <circle class="Ibb" cx="213.6" cy="393.3" id="YEIB">
+  <circle className="Ibb" cx="213.6" cy="393.3" id="YEIB">
   </circle>
-  <circle class="Abyan" cx="355.8" cy="416.7" id="YEAB">
+  <circle className="Abyan" cx="355.8" cy="416.7" id="YEAB">
   </circle>
-  <circle class="Sana'a City" cx="214.7" cy="293.1" id="YESA">
+  <circle className="Sana'a City" cx="214.7" cy="293.1" id="YESA">
   </circle>
-  <circle class="Al Bayda" cx="306.6" cy="375.1" id="YEBA">
+  <circle className="Al Bayda" cx="306.6" cy="375.1" id="YEBA">
   </circle>
-  <circle class="Ta'iz" cx="182.6" cy="437.9" id="YETA">
+  <circle className="Ta'iz" cx="182.6" cy="437.9" id="YETA">
   </circle>
-  <circle class="Al Jawf" cx="313.6" cy="201.6" id="YEJA">
+  <circle className="Al Jawf" cx="313.6" cy="201.6" id="YEJA">
   </circle>
-  <circle class="Hajjah" cx="145.8" cy="235.6" id="YEHJ">
+  <circle className="Hajjah" cx="145.8" cy="235.6" id="YEHJ">
   </circle>
-  <circle class="Al Hodeidah" cx="146.4" cy="331" id="YEHU">
+  <circle className="Al Hodeidah" cx="146.4" cy="331" id="YEHU">
   </circle>
-  <circle class="Hadramawt" cx="549.8" cy="193.9" id="YEHD">
+  <circle className="Hadramawt" cx="549.8" cy="193.9" id="YEHD">
   </circle>
-  <circle class="Dhamar" cx="231.9" cy="350.6" id="YEDH">
+  <circle className="Dhamar" cx="231.9" cy="350.6" id="YEDH">
   </circle>
-  <circle class="Shabwah" cx="393.3" cy="331" id="YESH">
+  <circle className="Shabwah" cx="393.3" cy="331" id="YESH">
   </circle>
-  <circle class="Sa'dah" cx="190.9" cy="175.5" id="YESD">
+  <circle className="Sa'dah" cx="190.9" cy="175.5" id="YESD">
   </circle>
-  <circle class="Sana'a" cx="241.2" cy="309.8" id="YESN">
+  <circle className="Sana'a" cx="241.2" cy="309.8" id="YESN">
   </circle>
-  <circle class="Aden" cx="258.8" cy="484.5" id="YEAD">
+  <circle className="Aden" cx="258.8" cy="484.5" id="YEAD">
   </circle>
-  <circle class="Lahj" cx="256.3" cy="454.4" id="YELA">
+  <circle className="Lahj" cx="256.3" cy="454.4" id="YELA">
   </circle>
-  <circle class="Ma'rib" cx="302.2" cy="294.9" id="YEMA">
+  <circle className="Ma'rib" cx="302.2" cy="294.9" id="YEMA">
   </circle>
-  <circle class="Al Mahwit" cx="168.4" cy="296.2" id="YEMW">
+  <circle className="Al Mahwit" cx="168.4" cy="296.2" id="YEMW">
   </circle>
-  <circle class="Al Maharah" cx="732.5" cy="229.6" id="YEMR">
+  <circle className="Al Maharah" cx="732.5" cy="229.6" id="YEMR">
   </circle>
-  <circle class="Amran" cx="195.2" cy="231.7" id="YEAM">
+  <circle className="Amran" cx="195.2" cy="231.7" id="YEAM">
   </circle>
-  <circle class="Ad Dali'" cx="258.3" cy="403.4" id="YEDA">
+  <circle className="Ad Dali'" cx="258.3" cy="403.4" id="YEDA">
   </circle>
-  <circle class="Raymah" cx="178.5" cy="350.8" id="YERA">
+  <circle className="Raymah" cx="178.5" cy="350.8" id="YERA">
   </circle>
-  <circle class="Socotra" cx="904.2" cy="511.9" id="YESU">
+  <circle className="Socotra" cx="904.2" cy="511.9" id="YESU">
   </circle>
  </g>
 </svg>

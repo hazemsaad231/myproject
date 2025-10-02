@@ -38,7 +38,7 @@ const SwiperComponent = () => {
                 className="slide-img w-full h-full"
               />
 
-              <div className=" absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black/30">
+              <div className=" absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black/50">
                 <p
   className="
     relative z-10
