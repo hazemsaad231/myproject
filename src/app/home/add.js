@@ -19,9 +19,9 @@ const Add = () => {
             <div>
 
              <div className="flex justify-center items-center gap-12">
-                  <hr className="w-10 sm:w-28 md:w-60 lg:w-96 h-1 bg-[#0c7f73] border-0 rounded" />
+                  <hr className="w-10 sm:w-28 md:w-60 lg:w-80 h-1 bg-[#0c7f73] border-0 rounded" />
   <h1 className="title text-2xl md:text-3xl lg:text-4xl">إحصــائيـــاتـــنــا</h1>
-    <hr className="w-10 sm:w-20 md:w-60 lg:w-96 h-2 bg-[#0c7f73] border-0 rounded" />
+    <hr className="w-10 sm:w-20 md:w-60 lg:w-80 h-2 bg-[#0c7f73] border-0 rounded" />
 
 </div>
 

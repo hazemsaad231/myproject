@@ -143,6 +143,7 @@ export default function Header() {
                     height={0}
                     sizes="100vw"
                     className="w-[56px] h-[56px] object-contain"
+                    priority
                   />
                 </div>
               </div>

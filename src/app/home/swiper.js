@@ -20,8 +20,8 @@ const SwiperComponent = () => {
 
    const [activeIndex, setActiveIndex] = useState(0);
 
-  const rows = 2; // عدد الصفوف للأجزاء
-  const cols = 2; // عدد الأعمدة للأجزاء
+  const rows = 2; 
+  const cols = 2; 
 
   // دالة لتوليد أجزاء الصورة مع إزاحات عشوائية
   const generateParts = (image) => {
