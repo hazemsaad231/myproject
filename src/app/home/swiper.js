@@ -13,6 +13,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { EffectCube, EffectCoverflow, EffectFlip } from "swiper/modules";
 import { useState } from "react";
 import Data from "../../data/data";
+import ServerImage from "./Image";
 
 
 
@@ -68,18 +69,13 @@ const SwiperComponent = () => {
       
         className="mySwiper"
       >
-        {Data.map((p, i) => (
-          <SwiperSlide key={i}>
+        {Data.map((item , index) => (
+          <SwiperSlide key={index}>
             <motion.div className="relative w-full h-[65vh] sm:h-[65vh] md:h-[80vh] lg:h-[80vh] overflow-hidden"
-              style={{ backgroundImage: `url(${p.image})`, backgroundPosition: p.bgPos }}
-                      // initial={{ opacity: 0, x: p.xOffset, y: p.yOffset }}
-                      animate={activeIndex === i ? { opacity: 1, x: 0, y: 0 } : { opacity: 0 }}
-                      transition={{ duration: 0.8, delay: i * 0.1 }}>
-              <img
-                alt={p.title}
-                src={p.image}
-                className="slide-img w-full h-full"
-              />
+                      animate={activeIndex === index ? { opacity: 1, x: 0, y: 0 } : { opacity: 0 }}
+                      transition={{ duration: 0.8, delay: index * 0.1 }}
+              >
+              <ServerImage src={`/${item.image}`} alt={item.title}  />
 
               <div className=" absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black/50">
                 <p
@@ -106,7 +102,7 @@ const SwiperComponent = () => {
     transform: "translate(0px, 0px)",
   }}
 >
-  {p.title}
+  {item.title}
 </p>
 
                 <button className="bg-white cursor-pointer mt-8 text-xl text-black px-8 py-3 rounded-lg hover:bg-[#056158] hover:text-white  transition duration-300">
