@@ -27,7 +27,7 @@ export default function Blind({ src, cols = 6, duration = 0.5, stagger = 0.06, d
                 position: "absolute",
                 top: 0,
                 left: `${leftPercent}%`,
-                width: `${widthPercent + 0.5}%`, 
+                width: `${widthPercent + 0.09}%`, 
                 height: "100%",
                 overflow: "hidden",
                 backgroundImage: `url("${src}")`,
