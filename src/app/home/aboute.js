@@ -12,12 +12,12 @@ const AboutPage = () => {
       <div className="flex justify-around mt-10">
 
         <div className="flex flex-col justify-center items-center gap-3">
-          <h1 className="title text-xl sm:text-2xl md:text-3xl lg:text-4xl pb-2" >زوار المنصه</h1>
+          <h1 className="title text-xl md:text-2xl pb-2" >زوار المنصه</h1>
           <p className="font-bold text-xl"> 1000</p>
         </div>
 
         <div className="flex flex-col justify-center items-center gap-3">
-          <h1 className="title text-xl sm:text-2xl md:text-3xl lg:text-4xl pb-2" >زوار اليوم</h1>
+          <h1 className="title text-xl md:text-2xl pb-2" >زوار اليوم</h1>
           <p className="font-bold text-xl">100</p>
         </div>
       </div>

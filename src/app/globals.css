@@ -36,7 +36,8 @@ body {
 }
 
 .title {
-  font-weight: bold;
+  font-weight: bolder;
+  font-family:  tajawal, Helvetica, sans-serif;
   color: #0c7f73;
 }
 

@@ -14,31 +14,13 @@ import { EffectCube, EffectCoverflow, EffectFlip } from "swiper/modules";
 import { useState } from "react";
 import Data from "../../data/data";
 import Image from "next/image";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 
 
-const SwiperComponent = () => {
+const HeroComponent = () => {
 
-   const [activeIndex, setActiveIndex] = useState(0);
 
-  const rows = 2; 
-  const cols = 2; 
-
-  // دالة لتوليد أجزاء الصورة مع إزاحات عشوائية
-  const generateParts = (image) => {
-    const parts = [];
-    for (let y = 0; y < rows; y++) {
-      for (let x = 0; x < cols; x++) {
-        parts.push({
-          bgPos: `${(x / (cols - 1)) * 100}% ${(y / (rows - 1)) * 100}%`,
-          xOffset: (Math.random() - 0.5) * 300,
-          yOffset: (Math.random() - 0.5) * 300,
-          image,
-        });
-      }
-    }
-    return parts;
-  };
 
 
   return <div className="relative">
@@ -65,15 +47,13 @@ const SwiperComponent = () => {
           delay: 3000,
           disableOnInteraction: false,
         }}
-        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
       
         className="mySwiper"
       >
         {Data.map((item , index) => (
           <SwiperSlide key={index}>
             <motion.div className="relative w-full h-[65vh] sm:h-[65vh] md:h-[80vh] lg:h-[80vh] overflow-hidden"
-                      animate={activeIndex === index ? { opacity: 1, x: 0, y: 0 } : { opacity: 0 }}
-                      transition={{ duration: 0.8, delay: index * 0.1 }}
+               
               >
             <Image
   src={`/${item.image}`}      
@@ -127,20 +107,18 @@ const SwiperComponent = () => {
 {/* الزرار اللي انت جايبه */}
       <button
         aria-label="Previous"
-        className="mt-4 custom-prev absolute left-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full border-2 border-white bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition"
+        className="mt-4 custom-prev absolute left-6 top-1/2 -translate-y-1/2 z-10 w-14 h-14  rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition"
       >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="15 18 9 12 15 6"></polyline>
-        </svg>
+        <FaArrowLeft className="text-white text-md" />
+   
       </button>
 
       <button
         aria-label="Next"
-        className="mt-4 custom-next absolute right-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full border-2 border-white bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition"
+        className="mt-4 custom-next absolute right-6 top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition"
       >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
+        <FaArrowRight className="text-white text-md" />
+    
       </button>
 
       
@@ -148,7 +126,7 @@ const SwiperComponent = () => {
   </div>;
 }
 
-export default SwiperComponent
+export default HeroComponent
 
 
 

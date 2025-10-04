@@ -9,7 +9,7 @@ const Add = () => {
             {TheData.map((item) => (
                 <div key={item.id} className="cursor-pointer  p-10 flex flex-col justify-center items-center bg-gray-100 rounded-4xl">
                     <h1 className="text-8xl text-[#0c7f73] mb-6">{item.icon}</h1>
-                    <h1 className="title w-full text-center text-xl sm:text-xl md:text-2xl lg:text-3xl">{item.title}</h1>
+                    <h1 className="title w-full text-center text-xl sm:text-xl md:text-2xl">{item.title}</h1>
                     
                 </div>
             ))}

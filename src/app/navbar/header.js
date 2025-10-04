@@ -66,7 +66,7 @@ export default function Header() {
 
       {/* desktop navbar */}
       <div className="hidden md:block">
-        <nav className="relative h-16 bg-[#028E81] text-white flex md:gap-8 lg:gap-10 xl:gap-16 justify-center items-center p-4">
+        <nav className="relative h-16 bg-[#028E81] text-white flex md:gap-8 lg:gap-10 xl:gap-24 justify-center items-center p-4">
           <div>
             {Logo ? <Logo /> : <div className="text-white font-bold">TAQRIB</div>}
           </div>

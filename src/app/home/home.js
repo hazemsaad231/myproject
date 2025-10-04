@@ -1,8 +1,8 @@
 import AboutPage from "./aboute";
 import Add from "./add";
+import HeroComponent from "./hero";
 import Maps from "./maps";
 import News from "./news";
-import SwiperComponent from "./swiper";
 
 const Homepage = () => {
 
@@ -10,7 +10,7 @@ const Homepage = () => {
 
   return (
     <div>
-    <SwiperComponent/>
+      <HeroComponent/>
     <AboutPage/>
     <Maps/>
     <Add/>
