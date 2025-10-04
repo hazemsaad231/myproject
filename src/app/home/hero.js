@@ -1,7 +1,5 @@
 'use client'
 
-
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,7 +9,6 @@ import "swiper/css/effect-flip";
 import { motion } from "framer-motion";
 import { Navigation, Autoplay } from "swiper/modules";
 import { EffectCube, EffectCoverflow, EffectFlip } from "swiper/modules";
-import { useState } from "react";
 import Data from "../../data/data";
 import Image from "next/image";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";

@@ -10,7 +10,7 @@ const Homepage = () => {
 
   return (
     <div>
-      <HeroComponent/>
+    <HeroComponent/>
     <AboutPage/>
     <Maps/>
     <Add/>
