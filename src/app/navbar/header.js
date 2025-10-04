@@ -48,7 +48,7 @@ export default function Header() {
             </div>
 
             {/* logo */}
-            <div className="relative z-20 rounded-2xl bg-white p-1 shadow">
+            <div className="relative">
               <Image
                 src="/logo.webp"
                 alt="logo"
@@ -66,7 +66,7 @@ export default function Header() {
 
       {/* desktop navbar */}
       <div className="hidden md:block">
-        <nav className="relative h-16 bg-[#028E81] text-white flex md:gap-8 lg:gap-10 xl:gap-24 justify-center items-center p-4">
+        <nav className="relative h-16 bg-[#028E81] text-white flex md:gap-8 lg:gap-10 xl:gap-28 justify-center items-center p-4">
           <div>
             {Logo ? <Logo /> : <div className="text-white font-bold">TAQRIB</div>}
           </div>

@@ -88,7 +88,7 @@ const HeroComponent = () => {
   {item.title}
 </p>
 
-                <button className="bg-white cursor-pointer mt-8 text-xl text-black px-8 py-3 rounded-lg hover:bg-[#056158] hover:text-white  transition duration-300">
+                <button className="bg-white cursor-pointer font-bold mt-8 text-xl text-black px-8 py-3 rounded-lg hover:bg-[#056158] hover:text-white  transition duration-300">
                   اقرأ المزيد
                 </button>
               </div>
