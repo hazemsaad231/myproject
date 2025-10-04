@@ -3,11 +3,11 @@ import "./globals.css";
 import Header from "./navbar/header";
 import { Cairo, Amiri, Tajawal } from "next/font/google";
 import { ContextProvider } from "@/Context/context";
-import "./globals.css"; // لو عندك
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Footer from "./footer/page";
+import NProgressLap from "./components/ProgressClient";
 
 
 
@@ -52,6 +52,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} ${tajawal.variable} ${amiri.variable} antialiased`}
       >
+        <NProgressLap/>
         <ContextProvider>
           <Header/>
         {children}
