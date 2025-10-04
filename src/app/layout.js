@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Footer from "./footer/page";
-import NProgressLap from "./components/nprogress/ProgressClient";
+import ProgressOnce from "./components/nprogress/ProgressClient";
 
 
 
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} ${tajawal.variable} ${amiri.variable} antialiased`}
       >
-        <NProgressLap/>
+        <ProgressOnce/>
         <ContextProvider>
           <Header/>
         {children}
