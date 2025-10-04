@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Footer from "./footer/page";
-import NProgressLap from "./components/ProgressClient";
+import NProgressLap from "./components/nprogress/ProgressClient";
 
 
 

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -49,3 +50,18 @@ html {
   scroll-behavior: smooth;
 }
 
+
+#nprogress .bar {
+  background: #29d; 
+  height: 3px;      
+}
+
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+}
+
+
+#nprogress .spinner {
+  display: none !important;
+}
