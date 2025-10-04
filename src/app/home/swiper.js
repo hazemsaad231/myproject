@@ -13,7 +13,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { EffectCube, EffectCoverflow, EffectFlip } from "swiper/modules";
 import { useState } from "react";
 import Data from "../../data/data";
-import ServerImage from "./Image";
+import Image from "next/image";
 
 
 
@@ -75,7 +75,13 @@ const SwiperComponent = () => {
                       animate={activeIndex === index ? { opacity: 1, x: 0, y: 0 } : { opacity: 0 }}
                       transition={{ duration: 0.8, delay: index * 0.1 }}
               >
-              <ServerImage src={`/${item.image}`} alt={item.title}  />
+            <Image
+  src={`/${item.image}`}      
+  alt={item.title}
+  fill                        
+  className="object-center"
+  priority={index === 0}     
+/>
 
               <div className=" absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black/50">
                 <p
@@ -112,7 +118,11 @@ const SwiperComponent = () => {
             </motion.div>
           </SwiperSlide>
         ))}
+
+
+
       </Swiper>
+
 
 {/* الزرار اللي انت جايبه */}
       <button
@@ -133,7 +143,6 @@ const SwiperComponent = () => {
         </svg>
       </button>
 
-
       
 
   </div>;
@@ -143,82 +152,3 @@ export default SwiperComponent
 
 
 
-
-
-// 'use client';
-// import { useState } from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import { Autoplay, Navigation } from "swiper/modules";
-// import { motion } from "framer-motion";
-// import Data from "../../data/data";
-
-// const SwiperComponent = () => {
-//   const [activeIndex, setActiveIndex] = useState(0);
-
-//   const rows = 2; // عدد الصفوف للأجزاء
-//   const cols = 2; // عدد الأعمدة للأجزاء
-
-//   // دالة لتوليد أجزاء الصورة مع إزاحات عشوائية
-//   const generateParts = (image) => {
-//     const parts = [];
-//     for (let y = 0; y < rows; y++) {
-//       for (let x = 0; x < cols; x++) {
-//         parts.push({
-//           bgPos: `${(x / (cols - 1)) * 100}% ${(y / (rows - 1)) * 100}%`,
-//           xOffset: (Math.random() - 0.5) * 300,
-//           yOffset: (Math.random() - 0.5) * 300,
-//           image,
-//         });
-//       }
-//     }
-//     return parts;
-//   };
-
-//   return (
-//     <div className="relative">
-//       <Swiper
-//         modules={[Autoplay, Navigation]}
-//         loop={true}
-//         slidesPerView={1}
-//         navigation={{ prevEl: ".custom-prev", nextEl: ".custom-next" }}
-//         autoplay={{ delay: 4000, disableOnInteraction: false }}
-//         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-//       >
-//         {Data.map((item, index) => {
-//           const parts = generateParts(item.image);
-//           return (
-//             <SwiperSlide key={item.id}>
-//               <div className="relative w-full h-[60vh] md:h-[80vh] lg:h-[80vh] overflow-hidden">
-//                 <div className="relative w-full h-full grid grid-rows-2 grid-cols-2">
-//                   {parts.map((p, i) => (
-//                     <motion.div
-//                       key={i}
-//                       className="w-full h-full bg-cover"
-//                       style={{ backgroundImage: `url(${p.image})`, backgroundPosition: p.bgPos }}
-//                       // initial={{ opacity: 0, x: p.xOffset, y: p.yOffset }}
-//                       animate={activeIndex === index ? { opacity: 1, x: 0, y: 0 } : { opacity: 0 }}
-//                       transition={{ duration: 0.8, delay: i * 0.1 }}
-//                     />
-//                   ))}
-//                 </div>
-
-//                 <div className="absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black/40">
-//                   <p className="text-white text-center font-bold text-3xl md:text-4xl"
-//                      style={{ textShadow: "rgba(7, 133, 134, 0.83) 4px 2px 0px" }}>
-//                     {item.title}
-//                   </p>
-//                   <button className="bg-white text-black px-8 py-3 rounded-lg hover:bg-[#056158] hover:text-white transition duration-300">
-//                     اقرأ المزيد
-//                   </button>
-//                 </div>
-//               </div>
-//             </SwiperSlide>
-//           );
-//         })}
-//       </Swiper>
-//     </div>
-//   );
-// };
-
-// export default SwiperComponent;
