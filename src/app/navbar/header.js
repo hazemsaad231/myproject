@@ -9,7 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { HiViewList } from "react-icons/hi";
 import { MdOutlineCancelPresentation } from "react-icons/md";
 import { Context } from "../../Context/context"; 
-import Logo from "./logo";
+import Logo, { SmallLogo } from "./logo";
 
 export default function Header() {
   const { active, setActive } = useContext(Context || {});
@@ -135,17 +135,7 @@ export default function Header() {
           <div className="absolute right-0 top-0 z-50 w-full bg-white shadow-2xl overflow-y-auto transform transition-transform">
             <div className="flex items-center justify-between p-4">
               <div className="flex items-center gap-3">
-                <div className="relative z-20 rounded-2xl bg-white p-1 shadow">
-                  <Image
-                    src="/logo.webp"
-                    alt="logo"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-[56px] h-[56px] object-contain"
-                    priority
-                  />
-                </div>
+               <SmallLogo/>
               </div>
 
               <button

@@ -70,7 +70,7 @@ const SwiperComponent = () => {
       >
         {Data.map((p, i) => (
           <SwiperSlide key={i}>
-            <motion.div className="relative w-full h-[60vh] sm:h-[60vh] md:h-[80vh] lg:h-[80vh] overflow-hidden"
+            <motion.div className="relative w-full h-[65vh] sm:h-[65vh] md:h-[80vh] lg:h-[80vh] overflow-hidden"
               style={{ backgroundImage: `url(${p.image})`, backgroundPosition: p.bgPos }}
                       // initial={{ opacity: 0, x: p.xOffset, y: p.yOffset }}
                       animate={activeIndex === i ? { opacity: 1, x: 0, y: 0 } : { opacity: 0 }}
@@ -98,6 +98,7 @@ const SwiperComponent = () => {
     text-xl sm:text-xl md:text-3xl lg:text-4xl
     tracking-[0px]
     opacity-100
+    mb-8
     
   "
   style={{

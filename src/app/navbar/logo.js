@@ -22,3 +22,21 @@ const Logo = () => {
     );
 }
 export default Logo
+
+
+export const SmallLogo = () => {
+    return (
+        <div className="relative z-20 rounded-2xl bg-white p-1 shadow">
+                         <Image
+                           src="/logo.webp"
+                           alt="logo"
+                           width={0}
+                           height={0}
+                           sizes="100vw"
+                           className="w-[56px] h-[56px] object-contain"
+                           priority
+                         />
+                       </div>
+
+    );
+}
