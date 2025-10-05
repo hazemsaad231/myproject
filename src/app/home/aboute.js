@@ -22,7 +22,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* الجزء الثاني */}
+    {/* الجزء الثاني */}
       <div className="flex justify-center items-center flex-col md:flex-row p-4 mt-10 w-full sm:w-full md:w-1/2 lg:w-1/2 m-auto"
       >
         <video
