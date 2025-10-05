@@ -30,9 +30,9 @@ export default function Header() {
         </div>
 
         {/* mobile bar */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
 
-          <div className="w-[100vw] flex justify-between items-center p-4">
+          <div className="w-[100vw] flex justify-between items-center p-6">
             <div>
               {isNavbarVisible ? (
                 <MdOutlineCancelPresentation
@@ -65,7 +65,7 @@ export default function Header() {
       </div>
 
       {/* desktop navbar */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <nav className="relative h-16 bg-[#028E81] text-white flex md:gap-8 lg:gap-10 xl:gap-28 justify-center items-center p-4">
           <div>
             {Logo ? <Logo /> : <div className="text-white font-bold">TAQRIB</div>}

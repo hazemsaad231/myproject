@@ -26,8 +26,8 @@ const NewsPage = async() => {
     {theData.map((item)=>(
 <Link href={`work-news/${item.id}`} key={item.id}>
       <div key={item.id} className="border border-gray-300 rounded shadow-sm hover:shadow-lg opacity-90 hover:opacity-100
-      duration-300" data-aos = "zoom-in">
-        <Image src="/photo.webp" alt="news" width={1000} height={1000} className="w-full shadow-sm object-cover" />
+      duration-300">
+        <Image src="/news.webp" alt="news" width={1000} height={1000} className="w-full shadow-sm object-cover" />
         <h2 className="text-xl font-semibold p-4">مستوى الاستجابة الإنسانية في اليمن حتى شهر يوليو 2025م</h2>
          <div className="flex  items-center gap-1 px-4 mb-12">
      <ImStatsBars className="text-[#0c7f73] text-2xl" />

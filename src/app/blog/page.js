@@ -13,7 +13,7 @@ const BlogPage = () => {
                     <h1 className="text-3xl font-bold text-white">مدونة تقريب</h1>
                     </div>
                   </div>
-                  <div className="py-20">
+                  <div className="py-24">
                     <video
                         src="/sadaka.mp4"
                         controls
