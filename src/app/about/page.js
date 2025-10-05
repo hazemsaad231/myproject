@@ -1,11 +1,11 @@
 
-import Image from "next/image";
+import Bg from "../components/bg";
 
 const AboutPage = () => {
   return (
     <div className="flex flex-col">
        <div className="relative w-full h-80">
-                    <Image src="/bg.webp" alt="about" fill className="w-full h-full object-cover" priority/>
+                    <Bg/>
       
                     <div className="absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black/30">
 
