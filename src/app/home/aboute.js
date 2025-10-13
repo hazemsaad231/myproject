@@ -32,15 +32,15 @@ const AboutPage = () => {
         <video
           src="/Taqreeb-2.mp4"
           controls
-          className="h-80  object-cover md:rounded-r-lg rounded-t-lg"
+          className="h-80  object-cover md:rounded-r-lg"
       
         >
           Your browser does not support the video tag.
         </video>
         <ScrollAnimate>
-<div className="flex flex-col gap-2 justify-center items-center bg-gray-100 md:h-80 w-full rounded-b-lg md:rounded-l-lg text-center p-5">
+<div className="w-full flex flex-col gap-2 justify-center items-center bg-gray-100 md:h-80  rounded-b-lg md:rounded-l-lg text-center p-5">
    <h1 className="title text-2xl md:text-3xl lg:text-4xl" >منصة تقريب</h1>
-        <p className="text-xl w-[300px] sm:w-[320px]  md:w-[350px] lg:w-[400px] xl:w-[500px] p-2  text-gray-500">
+        <p className="text-xl w-full  md:w-[350px] lg:w-[400px] xl:w-[500px] p-2  text-gray-500">
         منصة الكترونية غير ربحية تسعى لتقريب الوضع الاجتماعي والإنساني في مختلف محافظات اليمن لنقل صورة عن الواقع الذي يعيشه أهل اليمن في ظل الظروف الحالية وكذلك تعتبر تقريب دليلك للجهات العاملة في اليمن .
         </p>
         </div>
