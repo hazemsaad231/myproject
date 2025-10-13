@@ -6,15 +6,18 @@ const Add = () => {
         <div className="py-20 px-5 flex flex-col justify-center items-center ">
 
             {/* الجزء الاول */}
+             <ScrollAnimate>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-12">
             {TheData.map((item) => (
+               
                 <div key={item.id} className="cursor-pointer  p-10 flex flex-col justify-center items-center bg-gray-100 rounded-4xl">
                     <h1 className="text-8xl text-[#0c7f73] mb-6">{item.icon}</h1>
-                    <ScrollAnimate> <h1 className="title w-full text-center text-xl sm:text-xl md:text-2xl">{item.title}</h1></ScrollAnimate> 
+                     <h1 className="title w-full text-center text-xl sm:text-xl md:text-2xl">{item.title}</h1>
                 </div>
+               
             ))}
             </div>
-
+ </ScrollAnimate>
             {/* الجزء الثاني */}
             <div>
 

@@ -11,6 +11,10 @@ export const ContextProvider = (props) => {
 
      const [active, setActive] = useState(null);
 
+//        const response = await fetch("https://api.myjson.online/v1/records/b1691286-4153-4a2e-9a06-85ed11914e01");
+//   const data = await response.json();
+//   const theData = data.data
+
 
     return(
         <>

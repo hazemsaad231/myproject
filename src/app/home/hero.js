@@ -2,15 +2,21 @@
 
 'use client'
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, Navigation, EffectCoverflow } from "swiper/modules";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import Blind from "../components/framer";
 import Data from "../../data/data";
+import { Context } from "../../Context/context";
+
 
 const HeroComponent = () => {
+
+//  const {theData} = useContext(Context);
+ 
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -43,7 +49,7 @@ const HeroComponent = () => {
           <SwiperSlide key={index}>
             <div className="relative w-full h-[65vh] sm:h-[65vh] md:h-[80vh] lg:h-[80vh] overflow-hidden">
               {/* key مختلف لكل مرة slide يتغير → animation مضمون */}
-              <Blind key={activeIndex === index ? item.image : item.image + '-2'} src={`/${item.image}`} />
+              <Blind key={activeIndex === index ? item.image : item.image + '-2'} src={item.image} />
 
               <div className="absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black/50">
                 <p className="relative z-10 text-white w-[full] sm:w-[full] md:w-[400px] lg:w-[600px] xl:w-[900px] text-center font-bold text-xl sm:text-xl md:text-3xl lg:text-4xl opacity-100 mb-8" style={{textShadow: "rgba(7, 133, 134, 0.83) 4px 2px 0px"}}>

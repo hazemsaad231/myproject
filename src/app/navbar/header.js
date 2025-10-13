@@ -73,19 +73,19 @@ export default function Header() {
 
           <ul className="flex gap-8 text-lg font-semibold">
             <li onClick={() => handleBg("home")}>
-              <Link href="/" className={`hover:text-amber-500 ${active === "home" ? "text-amber-400" : ""}`}>
+              <Link href="/" className={`hover:text-amber-400 ${active === "home" ? "text-amber-500" : ""}`}>
                 الرئيسية
               </Link>
             </li>
             <li onClick={() => handleBg("about")}>
-              <Link href="/about" className={`hover:text-amber-500 ${active === "about" ? "text-amber-400" : ""}`}>
+              <Link href="/about" className={`hover:text-amber-400 ${active === "about" ? "text-amber-500" : ""}`}>
                 منصه تقريب
               </Link>
             </li>
 
             {/* dropdown */}
             <li className="relative group cursor-pointer" onClick={() => handleBg("services")}>
-              <div className={`flex items-center gap-1 mb-2 ${active === "services" ? "text-amber-400" : ""}`}>
+              <div className={`flex items-center gap-1 mb-2 ${active === "services" ? "text-amber-500" : ""}`}>
                 <span>الواقع الاجتماعي في اليمن</span>
                 <FaArrowDown />
               </div>
@@ -106,17 +106,17 @@ export default function Header() {
             </li>
 
             <li onClick={() => handleBg("associations")}>
-              <Link href="/associations" className={`hover:text-amber-400 ${active === "associations" ? "text-amber-400" : ""}`}>
+              <Link href="/associations" className={`hover:text-amber-400 ${active === "associations" ? "text-amber-500" : ""}`}>
                 دليل الجمعيات
               </Link>
             </li>
             <li onClick={() => handleBg("blog")}>
-              <Link href="/blog" className={`hover:text-amber-400 ${active === "blog" ? "text-amber-400" : ""}`}>
+              <Link href="/blog" className={`hover:text-amber-400 ${active === "blog" ? "text-amber-500" : ""}`}>
                 مدونة تقريب
               </Link>
             </li>
             <li onClick={() => handleBg("contact")}>
-              <Link href="/contact" className={`hover:text-amber-400 ${active === "contact" ? "text-amber-400" : ""}`}>
+              <Link href="/contact" className={`hover:text-amber-400 ${active === "contact" ? "text-amber-500" : ""}`}>
                 تواصل معنا
               </Link>
             </li>

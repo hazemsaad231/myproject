@@ -30,9 +30,11 @@ body {
 }
 
 .title {
-  font-weight: 900;
-  font-family:  tajawal, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-family:  tajawal, sans-serif;
   color: #0c7f73;
+   text-shadow: 0.3px 0 0 #0c7f73, -0.3px 0 0 #0c7f73;
+
 }
 
   .logo{

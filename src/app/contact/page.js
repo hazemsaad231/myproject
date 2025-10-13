@@ -27,29 +27,29 @@ const Contact = () => {
     
 
     return (
-        <div className="min-h-screen flex py-6">
+        <div className="py-32 flex">
 
-            <div className="rounded-xl bg-[#028E81] w-max p-2 py-2 m-auto">
+            <div className="rounded-xl bg-[#028E81] w-max p-4 py-4 m-auto">
     
     <div className="flex flex-col  justify-center items-center w-full m-auto">
     <form onSubmit={handleSubmit(onSubmit)}>
-             <div className="grid grid-cols-1 place-items-center gap-4 p-2 sm:p-4 md:p-8 lg:p-12 xl:p-16 w-[300px] sm:w-[500px] md:w:[600px] lg:w-[650px]">
+             <div className="grid grid-cols-1 place-items-center gap-4 p-2 py-6 sm:p-4 md:p-8 lg:p-12 xl:p-16 w-[280px] sm:w-[500px] md:w:[600px] lg:w-[650px]">
               {/* الصف الاول */}
               <div className="flex my-2 w-full m-auto gap-6">
                  <div className="flex flex-col w-full">
                      <input type="text" placeholder="الاسم بالكامل" className="rounded-md w-full p-2 bg-white shadow outline-blue-500" {...register("name", { required: true })} />
-                     {errors.name && <span className="text-red-500 mt-3">الاسم مطلوب </span>}
+                     {errors.name && <span className="text-red-500 mt-3"> * الاسم مطلوب </span>}
                 </div>
                 <div className="flex flex-col w-full">
                      <input type="text" placeholder="رقم الجوال " className="rounded-md  w-full p-2 bg-white shadow outline-blue-500" {...register("description", { required: true })} />
-                    {errors.description && <span className="text-red-500 mt-3">رقم الجوال مطلوب</span>}
+                    {errors.description && <span className="text-red-500 mt-3"> * رقم الجوال مطلوب</span>}
                 </div>
               </div>
 
                {/* الصف الثاني */}
                  <div className="flex flex-col w-full">
                      <input type="text" placeholder="البريد الالكتروني" className="rounded-md w-full p-2 bg-white shadow outline-blue-500" {...register("author", { required: true })} />
-                     {errors.author && <span className="text-red-500 mt-3">البريد الالكتروني مطلوب</span>}
+                     {errors.author && <span className="text-red-500 mt-3"> * البريد الالكتروني مطلوب</span>}
                 </div>
 
 {/* الصف الثالث */}
